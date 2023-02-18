@@ -1,0 +1,38 @@
+建立分支:         git branch <branch name>
+查看分支:         git branch
+切換分支:         git checkout <branch name>
+刪除本地分支:     git branch -d <branch name>
+刪除遠端分支:     git push origin --delete <branch name>
+更新遠端分支:     git push origin <branch name>
+下載遠端分之:     git pull origin <branch name>
+回到上一個commit: git reset HEAD^
+跳到某個commit:   git reset e12d8ef --hard
+
+add:      新增/修改功能 (feature)。
+remove:   刪除
+fix:      修補 bug (bug fix)。
+docs:     文件 (documentation)。
+style:    格式 (不影響程式碼運行的變動 white-space, formatting, missing semi colons, etc)。
+refactor: 重構 (既不是新增功能，也不是修補 bug 的程式碼變動)。
+perf:     改善效能 (A code change that improves performance)。
+test:     增加測試 (when adding missing tests)。
+chore:    建構程序或輔助工具的變動 (maintain)。
+revert:   撤銷回覆先前的 commit 例如：revert: type(scope): subject (回覆版本：xxxx)。
+
+
+按兩下tab可以看指令
+<$ git add .> 			加入.git層資料夾內所有檔案
+<$ git add 檔案名稱>		加入特定檔案
+<$ git add src/.>		加入特定資料夾內的檔案
+<$ git status>			看git目前狀態
+<$ git commit -m "">		本機的git狀態存檔" "內放此次的修改說明 	
+<$ git tag 1.0.0 14b4907	對commit新增tag功能 (tag有唯一性)
+<$ git tag -d 1.0.0 		移除tag功能
+<$ git commit --amend -m ""	修改commit功能
+<$ git log --oneline		簡單顯示log
+<$ git diff SHA1 SHA1		比對SHA1的差異
+<$ git touch .gitignore		創建ignore檔案
+
+
+
+
