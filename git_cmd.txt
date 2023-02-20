@@ -40,6 +40,8 @@ $ git branch			查看目前分支有哪些
 $ git checkout feature		切換分支到"feature"
 $ git checkout -b hotfixes	創建"hotfixes"分支並切換過去
 $ git branch -d delet		刪除"delet"分支。(無法刪除本身所在的分支)
-測試刪除分之限制
+$ git branch -D ee		強制刪除"ee"分支
+$ git checkout -b feature d390c48	復原且切換至"feature"藉由"d390c48"commit ID碼
+
 
 
