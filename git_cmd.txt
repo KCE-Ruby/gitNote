@@ -34,5 +34,12 @@ revert:   撤銷回覆先前的 commit 例如：revert: type(scope): subject (�
 <$ git touch .gitignore		創建ignore檔案
 
 
+<分支功能>
+$ git branch feature		建立"feature"分支
+$ git branch			查看目前分支有哪些
+$ git checkout feature		切換分支到"feature"
+$ git checkout -b hotfixes	創建"hotfixes"分支並切換過去
+
+
 
 
