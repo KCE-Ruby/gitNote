@@ -21,18 +21,19 @@ revert:   撤銷回覆先前的 commit 例如：revert: type(scope): subject (�
 
 
 按兩下tab可以看指令
-<$ git add .> 			加入.git層資料夾內所有檔案
-<$ git add 檔案名稱>		加入特定檔案
-<$ git add src/.>		加入特定資料夾內的檔案
-<$ git status>			看git目前狀態
-<$ git commit -m "">		本機的git狀態存檔" "內放此次的修改說明 	
-<$ git tag 1.0.0 14b4907	對commit新增tag功能 (tag有唯一性)
-<$ git tag -d 1.0.0 		移除tag功能
-<$ git commit --amend -m ""	修改commit功能
-<$ git log --oneline		簡單顯示log
-<$ git diff SHA1 SHA1		比對SHA1的差異
-<$ git touch .gitignore		創建ignore檔案
+$ git add . 			加入.git層資料夾內所有檔案
+$ git add 檔案名稱		加入特定檔案
+$ git add src/.			加入特定資料夾內的檔案
+$ git status			看git目前狀態
+$ git log --oneline		簡單顯示log
+$ git diff SHA1 SHA1		比對SHA1的差異
+$ git touch .gitignore		創建ignore檔案
 
+<commit功能>
+$ git commit -m ""		本機的git狀態存檔" "內放此次的修改說明 	
+$ git tag 1.0.0 14b4907	對commit新增tag功能 (tag有唯一性)
+$ git tag -d 1.0.0 		移除tag功能
+$ git commit --amend -m ""	修改commit功能
 
 <分支功能>
 $ git branch feature		建立"feature"分支
@@ -42,6 +43,12 @@ $ git checkout -b hotfixes	創建"hotfixes"分支並切換過去
 $ git branch -d delet		刪除"delet"分支。(無法刪除本身所在的分支)
 $ git branch -D ee		強制刪除"ee"分支
 $ git checkout -b feature d390c48	復原且切換至"feature"藉由"d390c48"commit ID碼
+
+<pull同步功能>
+$ git fetch			從遠端下載新的內容至目前目錄，且會產生新分支
+$ git merge origin/main		合併fetch下來後新產生的分支
+$ git pull			下載並合併遠端資料
+
 
 
 
