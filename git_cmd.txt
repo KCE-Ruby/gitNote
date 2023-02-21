@@ -19,7 +19,6 @@ test:     增加測試 (when adding missing tests)。
 chore:    建構程序或輔助工具的變動 (maintain)。
 revert:   撤銷回覆先前的 commit 例如：revert: type(scope): subject (回覆版本：xxxx)。
 
-
 按兩下tab可以看指令
 $ git add . 			加入.git層資料夾內所有檔案
 $ git add 檔案名稱		加入特定檔案
@@ -44,10 +43,11 @@ $ git branch -d delet		刪除"delet"分支。(無法刪除本身所在的分支)
 $ git branch -D ee		強制刪除"ee"分支
 $ git checkout -b feature d390c48	復原且切換至"feature"藉由"d390c48"commit ID碼
 
-<pull同步功能>
+<pull從遠端下載功能>
 $ git fetch			從遠端下載新的內容至目前目錄，且會產生新分支
 $ git merge origin/main		合併fetch下來後新產生的分支
 $ git pull			下載並合併遠端資料
-$ git pull --rebase		合併分支時不保留commit
 
+<clone複製功能>
+$ git clone <url>		從遠端複製一份檔案至本端(用於第一次下載後面用pull更新)
 
