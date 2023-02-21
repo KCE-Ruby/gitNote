@@ -48,7 +48,6 @@ $ git checkout -b feature d390c48	復原且切換至"feature"藉由"d390c48"comm
 $ git fetch			從遠端下載新的內容至目前目錄，且會產生新分支
 $ git merge origin/main		合併fetch下來後新產生的分支
 $ git pull			下載並合併遠端資料
-
-
+$ git pull --rebase		合併分支時不保留commit
 
 
